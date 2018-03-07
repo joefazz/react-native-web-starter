@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, Image, Animated, StyleSheet, StatusBar } from 'react-native'
+import { View, Text, Animated, StyleSheet, StatusBar } from 'react-native'
 import { duration } from 'moment';
 
 export default class App extends React.Component {
