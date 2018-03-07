@@ -26,6 +26,10 @@ Master branch will always be the most minimal starting point.
 
 I'm also toying with the idea of doing a starting point with React Native CLI instead of Expo however that will mean the UI for mobile will less predictiable than developing with Expo.
 
+#### Tasks
+- Get jest working properly
+- Redux starting point (no middleware just basic)
+
 ### Credit
 
 - Huge thanks to [Nicolas Gallagher](https://github.com/necolas) for making React Native Web
