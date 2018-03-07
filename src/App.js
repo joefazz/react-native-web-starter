@@ -1,12 +1,15 @@
 import React from 'react'
+import { connect } from 'react-redux';
 import { View, Text, Image, Animated, StyleSheet, StatusBar } from 'react-native'
-import { duration } from 'moment';
+import { exampleAction } from './redux/actions/exampleAction';
 
-export default class App extends React.Component {
+export class App extends React.Component {
     constructor(props) {
         super(props)
 
         this.imageAnimation = new Animated.Value(0);
+
+        console.log(props);
     }
     
     componentDidMount() {
@@ -45,6 +48,16 @@ export default class App extends React.Component {
         )
     }
 }
+
+const mapStateToProps = (state) => ({
+    example: state.example
+});
+
+const bindActions = (dispatch) => ({
+    exampleAction: () => dispatch(exampleAction())
+});
+
+export default connect(mapStateToProps, bindActions)(App);
 
 const styles = StyleSheet.create({
     app: {

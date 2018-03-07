@@ -8,7 +8,9 @@
     "react-dom": "^16.2.0",
     "react-native": "0.52.0",
     "react-native-web": "^0.5.1",
-    "react-scripts": "1.1.1"
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.1",
+    "redux": "^3.7.2"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
