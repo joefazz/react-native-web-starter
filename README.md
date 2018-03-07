@@ -1,4 +1,4 @@
-## React Native Web Starter
+# React Native Web Starter
 
 ![Starting Point](docs/master.png)
 
@@ -15,7 +15,18 @@ Clone the branch with the starting point you want and just rename the project, s
 
 A full list of the scripts defined in `package.json` is shown below.
 
-#### TODO 
+| Script              | Action                                                  |
+|---------------------|---------------------------------------------------------|
+| `yarn web`          | Start CRA Development Build                             |
+| `yarn build-web`    | Create production build for web                         |
+| `yarn eject-web`    | Eject from CRA                                          |
+| `yarn start-native` | Start the Expo packager                                 |
+| `yarn eject-native` | Eject from Expo                                         |
+| `yarn android`      | Start expo packager and install app to Android Emulator |
+| `yarn ios`          | Start expo packager and install app to iOS Simulator    |
+| `yarn test-native`  | Run testing script for mobile app                       |
+| `yarn test-web`     | Run testing script for web app                          |
+| `yarn test`         | Run both testing scripts                                |
 
 
 ### Future Plans for this Library
