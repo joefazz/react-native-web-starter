@@ -2,14 +2,20 @@
 
 ![Starting Point](docs/master.png)
 
+### Introduction
+
 This repo is intending to provide an easy starting point for developers looking to make fully cross platform applications across both web with [React Native Web](https://github.com/necolas/react-native-web) and mobile with [Expo](https://github.com/react-community/create-react-native-app).
 
 It is bootstrapped with [Create React App](https://github.com/facebook/create-react-app) so you can run `yarn web` in order to start up the development web server with all the hot reloading goodness you've come to expect.
 
 It has then been integrated with [Create React Native App](https://github.com/react-community/create-react-native-app) and running `yarn ios` or `yarn android` will start the Expo packager. (You can also run the project from the Expo XDE program).
 
+### Get Started
+Clone the branch with the starting point you want and just rename the project, set a new upstream and you're good to go. 🙂
+
 A full list of the scripts defined in `package.json` is shown below.
-** TODO **
+
+#### TODO 
 
 
 ### Future Plans for this Library
