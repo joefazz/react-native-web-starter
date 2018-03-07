@@ -19,3 +19,9 @@ The aim for this library is to make several branches that have different startin
 Master branch will always be the most minimal starting point.
 
 I'm also toying with the idea of doing a starting point with React Native CLI instead of Expo however that will mean the UI for mobile will less predictiable than developing with Expo.
+
+### Credit
+
+- Huge thanks to [Nicolas Gallagher](https://github.com/necolas) for making React Native Web
+- Thanks to [Expo](https://expo.io/) for making it so easy to get started with React Native development
+- Thanks to [Yannick Spark](https://twitter.com/yannickdot) for writing [this great article](https://medium.com/@yannickdot/write-once-run-anywhere-with-create-react-native-app-and-react-native-web-ad40db63eed0) which inspired me to get started with React Native Web
