@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux';
-import { View, Text, Image, Animated, StyleSheet, StatusBar } from 'react-native'
+import { View, Text, Animated, StyleSheet, StatusBar } from 'react-native'
 import { exampleAction } from './redux/actions/exampleAction';
 
 export class App extends React.Component {
