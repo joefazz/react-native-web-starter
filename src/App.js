@@ -8,8 +8,6 @@ export class App extends React.Component {
         super(props)
 
         this.imageAnimation = new Animated.Value(0);
-
-        console.log(props);
     }
     
     componentDidMount() {
