@@ -1,5 +1,6 @@
 import React from 'react'
-import { View, Text, Animated, StyleSheet, StatusBar } from 'react-native'
+import { View, Text, Animated, StyleSheet, StatusBar, TouchableOpacity } from 'react-native'
+import { Router, Switch, Link, Route } from './Routing';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -17,6 +18,18 @@ export default class App extends React.Component {
         ).start();
 
         StatusBar.setBarStyle('light-content');
+    }
+
+    Home = (rotationStyle) => {
+        return (
+            <View style={{ alignItems: 'center', flex: 3 }}>
+                <Link to={'/one'} component={TouchableOpacity} >
+                    <Text style={styles.appIntro}>
+                        To get started, edit src/App.js and save to reload.
+                    </Text>
+                </Link>
+            </View>
+        );
     }
 
     render() {
@@ -37,9 +50,26 @@ export default class App extends React.Component {
                     />
                     <Text style={styles.appTitle}>Welcome to React Native Web️</Text>
                 </View>
-                <Text style={styles.appIntro}>
-                    To get started, edit src/App.js and save to reload.
-                </Text>
+                <Router>
+                    <Switch hideNavBar={true}>
+                        <Route exact path="/" component={this.Home} />
+                        <Route path="/one" component={Other} />
+                    </Switch>
+                </Router>
+            </View>
+        )
+    }
+}
+
+export class Other extends React.Component {
+    render() {
+        return (
+            <View style={{ alignItems: 'center', flex: 3 }}>
+                <Link to={'/'} component={TouchableOpacity}>
+                    <Text style={styles.appIntro}>
+                        Other page
+                    </Text>
+                </Link>
             </View>
         )
     }
