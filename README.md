@@ -39,6 +39,8 @@ Master branch will always be the most minimal starting point.
 
 I'm also toying with the idea of doing a starting point with React Native CLI instead of Expo however that will mean the UI for mobile will less predictiable than developing with Expo.
 
+If you have any ideas for a boilerplate then please create an issue or even better a pull request! I'm hoping to get this repo to be a big hub for getting started with React Native Web with tutorials etc.
+
 #### Tasks
 - Get jest working properly
 
