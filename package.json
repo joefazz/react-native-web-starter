@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "expo": "^25.0.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-native": "0.52.0",
-    "react-native-web": "^0.5.1",
+    "expo": "^26.0.0",
+    "react": "16.3.0-alpha.1",
+    "react-dom": "^16.3.1",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-26.0.0.tar.gz",
+    "react-native-web": "^0.5.4",
     "react-redux": "^5.0.7",
-    "react-scripts": "1.1.1",
+    "react-scripts": "1.1.4",
     "redux": "^3.7.2"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
@@ -30,11 +30,11 @@
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-plugin-transform-react-jsx-source": "^6.22.0",
-    "babel-preset-expo": "^4.0.0",
-    "flow-bin": "^0.66.0",
-    "jest-expo": "^25.1.0",
-    "react-native-scripts": "^1.11.1",
-    "react-test-renderer": "16.2.0"
+        "babel-plugin-transform-react-jsx-source": "^6.22.0",
+        "babel-preset-expo": "^4.0.0",
+        "flow-bin": "^0.66.0",
+        "jest-expo": "^26.0.0",
+        "react-native-scripts": "^1.13.1",
+        "react-test-renderer": "16.3.1"
   }
 }
