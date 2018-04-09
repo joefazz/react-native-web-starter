@@ -21,16 +21,6 @@ export class App extends React.Component {
         StatusBar.setBarStyle("light-content");
     }
 
-    Home = rotationStyle => {
-        return (
-            <View style={{ alignItems: "center", flex: 3 }}>
-                <Link to={"/one"} component={TouchableOpacity}>
-                    <Text style={styles.appIntro}>To get started, edit src/App.js and save to reload.</Text>
-                </Link>
-            </View>
-        );
-    };
-
     render() {
         const rotationStyle = {
             transform: [
@@ -52,8 +42,11 @@ export class App extends React.Component {
                         source={require("./assets/react-logo.png")}
                     />
                     <Text style={styles.appTitle}>Welcome to React Native Web️</Text>
+                    <Text style={styles.appSubtitle}>Redux edition</Text>
                 </View>
-                <Text>Redux edition</Text>
+                <View style={{ alignItems: "center", flex: 3 }}>
+                    <Text style={styles.appIntro}>To get started, edit src/App.js and save to reload.</Text>
+                </View>
             </View>
         );
     }
@@ -88,6 +81,9 @@ const styles = StyleSheet.create({
     appTitle: {
         flex: 1,
         fontSize: 16,
+        color: "white"
+    },
+    appSubtitle: {
         color: "white"
     },
     appIntro: {

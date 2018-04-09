@@ -38,7 +38,6 @@ I'm also toying with the idea of doing a starting point with React Native CLI in
 #### Tasks
 
 *   Get jest working properly
-*   Redux starting point (no middleware just basic)
 *   TypeScript
 
 ### Credit
