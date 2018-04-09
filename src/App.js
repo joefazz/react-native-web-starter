@@ -1,9 +1,7 @@
 import React from "react";
-import { connect } from "react-redux";
 import { View, Text, Animated, StyleSheet, StatusBar } from "react-native";
-import { exampleAction } from "./redux/actions/exampleAction";
 
-export class App extends React.Component {
+export default class App extends React.Component {
     constructor(props) {
         super(props);
 
@@ -20,16 +18,6 @@ export class App extends React.Component {
 
         StatusBar.setBarStyle("light-content");
     }
-
-    Home = rotationStyle => {
-        return (
-            <View style={{ alignItems: "center", flex: 3 }}>
-                <Link to={"/one"} component={TouchableOpacity}>
-                    <Text style={styles.appIntro}>To get started, edit src/App.js and save to reload.</Text>
-                </Link>
-            </View>
-        );
-    };
 
     render() {
         const rotationStyle = {
@@ -52,39 +40,15 @@ export class App extends React.Component {
                         source={require("./assets/react-logo.png")}
                     />
                     <Text style={styles.appTitle}>Welcome to React Native Web️</Text>
+                    <Text style={styles.appSubtitle}>Vanilla Edition</Text>
                 </View>
-                <Router>
-                    <Switch hideNavBar={true}>
-                        <Route exact path="/" component={this.Home} />
-                        <Route path="/one" component={Other} />
-                    </Switch>
-                </Router>
+                <View style={{ alignItems: "center", flex: 3 }}>
+                    <Text style={styles.appIntro}>To get started, edit src/App.js and save to reload.</Text>
+                </View>
             </View>
         );
     }
 }
-
-export class Other extends React.Component {
-    render() {
-        return (
-            <View style={{ alignItems: "center", flex: 3 }}>
-                <Link to={"/"} component={TouchableOpacity}>
-                    <Text style={styles.appIntro}>Other page</Text>
-                </Link>
-            </View>
-        );
-    }
-}
-
-const mapStateToProps = state => ({
-    example: state.example
-});
-
-const bindActions = dispatch => ({
-    exampleAction: () => dispatch(exampleAction())
-});
-
-export default connect(mapStateToProps, bindActions)(App);
 
 const styles = StyleSheet.create({
     app: {
@@ -105,6 +69,9 @@ const styles = StyleSheet.create({
     appTitle: {
         flex: 1,
         fontSize: 16,
+        color: "white"
+    },
+    appSubtitle: {
         color: "white"
     },
     appIntro: {
