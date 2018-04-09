@@ -53,24 +53,7 @@ export class App extends React.Component {
                     />
                     <Text style={styles.appTitle}>Welcome to React Native Web️</Text>
                 </View>
-                <Router>
-                    <Switch hideNavBar={true}>
-                        <Route exact path="/" component={this.Home} />
-                        <Route path="/one" component={Other} />
-                    </Switch>
-                </Router>
-            </View>
-        );
-    }
-}
-
-export class Other extends React.Component {
-    render() {
-        return (
-            <View style={{ alignItems: "center", flex: 3 }}>
-                <Link to={"/"} component={TouchableOpacity}>
-                    <Text style={styles.appIntro}>Other page</Text>
-                </Link>
+                <Text>Redux edition</Text>
             </View>
         );
     }
