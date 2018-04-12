@@ -13,7 +13,7 @@
     "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
     "scripts": {
         "web": "react-scripts start",
-        "build-ts": "tsc && npm run lint-ts",
+        "build-ts": "tsc && yarn run lint-ts",
         "lint-ts": "tslint -p . -c tslint.json 'src/**/*.{ts,tsx}'",
         "build-web": "react-scripts build",
         "test-web": "react-scripts test --env=jsdom",
