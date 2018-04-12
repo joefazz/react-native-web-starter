@@ -17,7 +17,7 @@ It has then been integrated with [Create React Native App](https://github.com/re
 | master                  | The most minimal possible boilerplate, will always be the case                                                                                                           |
 | redux                   | Implements redux reducers, actions, store and connection including example                                                                                               |
 | navigation-react-router | Using react-router-dom, react-router-native and react-router-navigation in order to have a platform agnostic navigation solution including native look at feel on phones |
-| typescript | Uses the TSC compiler user `yarn watch` to track file changes and compile on the fly |
+| typescript              | Uses the TSC compiler user `yarn watch` to track file changes and compile on the fly                                                                                     |
 
 ## Get Started
 
@@ -25,18 +25,19 @@ Clone the branch with the starting point you want and just rename the project (d
 
 A full list of the scripts defined in `package.json` is shown below.
 
-| Script              | Action                                                  |
-| ------------------- | ------------------------------------------------------- |
-| `yarn web`          | Start CRA Development Build                             |
-| `yarn build-web`    | Create production build for web                         |
-| `yarn eject-web`    | Eject from CRA                                          |
-| `yarn start-native` | Start the Expo packager                                 |
-| `yarn eject-native` | Eject from Expo                                         |
-| `yarn android`      | Start expo packager and install app to Android Emulator |
-| `yarn ios`          | Start expo packager and install app to iOS Simulator    |
-| `yarn test-native`  | Run testing script for mobile app                       |
-| `yarn test-web`     | Run testing script for web app                          |
-| `yarn test`         | Run both testing scripts                                |
+| Script              | Action                                                        |
+| ------------------- | ------------------------------------------------------------- |
+| `yarn web`          | Start CRA Development Build                                   |
+| `yarn build-web`    | Create production build for web                               |
+| `yarn eject-web`    | Eject from CRA                                                |
+| `yarn start-native` | Start the Expo packager                                       |
+| `yarn eject-native` | Eject from Expo                                               |
+| `yarn android`      | Start expo packager and install app to Android Emulator       |
+| `yarn ios`          | Start expo packager and install app to iOS Simulator          |
+| `yarn test-native`  | Run testing script for mobile app                             |
+| `yarn test-web`     | Run testing script for web app                                |
+| `yarn test`         | Run both testing scripts                                      |
+| `yarn watch`        | TypeScript compiler will watch for changes compile on the fly |
 
 ### Future Plans for this Library
 
@@ -51,7 +52,6 @@ If you have any ideas for a boilerplate then please create an issue or even bett
 #### Tasks
 
 *   Get jest working properly
-*   TypeScript
 *   ReasonML
 
 ### Credit
@@ -59,3 +59,4 @@ If you have any ideas for a boilerplate then please create an issue or even bett
 *   Huge thanks to [Nicolas Gallagher](https://github.com/necolas) for making React Native Web
 *   Thanks to [Expo](https://expo.io/) for making it so easy to get started with React Native development
 *   Thanks to [Yannick Spark](https://twitter.com/yannickdot) for writing [this great article](https://medium.com/@yannickdot/write-once-run-anywhere-with-create-react-native-app-and-react-native-web-ad40db63eed0) which inspired me to get started with React Native Web
+*   Thanks to [lukewis](https://github.com/lukewis) for contributing this typescript starter
