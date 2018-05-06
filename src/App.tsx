@@ -1,34 +1,42 @@
-import React from "react";
-import { View, Text, Animated, StyleSheet, StatusBar } from "react-native";
+import * as React from "react";
+import {
+    Animated,
+    StatusBar,
+    StyleSheet,
+    Text,
+    View,
+} from "react-native";
 
 export default class App extends React.Component {
-    constructor(props) {
+    private imageAnimation: Animated.Value;
+
+    constructor(props: any) {
         super(props);
 
         this.imageAnimation = new Animated.Value(0);
     }
 
-    componentDidMount() {
+    public componentDidMount() {
         Animated.loop(
             Animated.timing(this.imageAnimation, {
+                duration: 1005,
                 toValue: 1,
-                duration: 1005
-            })
+            }),
         ).start();
 
         StatusBar.setBarStyle("light-content");
     }
 
-    render() {
+    public render() {
         const rotationStyle = {
             transform: [
                 {
                     rotate: this.imageAnimation.interpolate({
                         inputRange: [0, 1],
-                        outputRange: ["0deg", "360deg"]
-                    })
-                }
-            ]
+                        outputRange: ["0deg", "360deg"],
+                    }),
+                },
+            ],
         };
 
         return (
@@ -39,11 +47,13 @@ export default class App extends React.Component {
                         resizeMode={"contain"}
                         source={require("./assets/react-logo.png")}
                     />
-                    <Text style={styles.appTitle}>Welcome to React Native Web️</Text>
-                    <Text style={styles.appSubtitle}>Vanilla Edition</Text>
+                    <Text style={styles.appTitle}>Welcome to React Native Web</Text>
+                    <Text style={styles.appSubtitle}>Typescript Edition</Text>
                 </View>
                 <View style={{ alignItems: "center", flex: 3 }}>
-                    <Text style={styles.appIntro}>To get started, edit src/App.js and save to reload.</Text>
+                    <Text style={styles.appIntro}>
+                        To get started, run "yarn watch", then edit src/App.tsx and save to reload.
+                    </Text>
                 </View>
             </View>
         );
@@ -52,31 +62,31 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
     app: {
-        flex: 1
+        flex: 1,
     },
     appHeader: {
-        flex: 1,
+        alignItems: "center",
         backgroundColor: "#222",
-        padding: 20,
-        justifyContent: "center",
-        alignItems: "center"
-    },
-    headerImage: {
-        width: 200,
-        height: 200,
-        flex: 3
-    },
-    appTitle: {
         flex: 1,
-        fontSize: 16,
-        color: "white"
-    },
-    appSubtitle: {
-        color: "white"
+        justifyContent: "center",
+        padding: 20,
     },
     appIntro: {
         flex: 3,
         fontSize: 30,
-        textAlign: "center"
-    }
+        textAlign: "center",
+    },
+    appSubtitle: {
+        color: "white",
+    },
+    appTitle: {
+        color: "white",
+        flex: 1,
+        fontSize: 16,
+    },
+    headerImage: {
+        flex: 3,
+        height: 200,
+        width: 200,
+    },
 });
