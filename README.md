@@ -2,9 +2,9 @@
 
 ## Introduction
 
-#### Navigation is done using react router so look up docs for that and the repo credited at the bottom of the README contains information about how it works for mobile. I've aliased the `<Navigation />` component to `<Switch />` and `<Card />` to `<Route />` to make the lib more platform agnostic
-
 This repo is intending to provide an easy starting point for developers looking to make fully cross platform applications across both web with [React Native Web](https://github.com/necolas/react-native-web) and mobile with [Expo](https://github.com/react-community/create-react-native-app).
+
+All branches represent a particular starting point.
 
 It is bootstrapped with [Create React App](https://github.com/facebook/create-react-app) so you can run `yarn web` in order to start up the development web server with all the hot reloading goodness you've come to expect.
 
@@ -37,6 +37,21 @@ A full list of the scripts defined in `package.json` is shown below.
 | `yarn test-native`  | Run testing script for mobile app                       |
 | `yarn test-web`     | Run testing script for web app                          |
 | `yarn test`         | Run both testing scripts                                |
+
+### Future Plans for this Library
+
+The aim for this library is to make several branches that have different starting points i.e. Navigation, Auth etc.
+
+Master branch will always be the most minimal starting point.
+
+I'm also toying with the idea of doing a starting point with React Native CLI instead of Expo however that will mean the UI for mobile will less predictiable than developing with Expo.
+
+If you have any ideas for a boilerplate then please create an issue or even better a pull request! I'm hoping to get this repo to be a big hub for getting started with React Native Web with tutorials etc.
+
+#### Tasks
+
+*   Get jest working properly
+*   ReasonML
 
 ### Credit
 
