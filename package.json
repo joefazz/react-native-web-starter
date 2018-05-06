@@ -1,40 +1,40 @@
 {
-  "name": "react-native-web-starter",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "expo": "^26.0.0",
-    "react": "16.3.0-alpha.1",
-    "react-dom": "^16.3.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-26.0.0.tar.gz",
-    "react-native-web": "^0.5.4",
-    "react-redux": "^5.0.7",
-    "react-scripts": "1.1.4",
-    "redux": "^3.7.2"
-  },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
-  "scripts": {
-    "web": "react-scripts start",
-    "build-web": "react-scripts build",
-    "test-web": "react-scripts test --env=jsdom",
-    "eject-web": "react-scripts eject",
-    "start-native": "react-native-scripts start",
-    "eject-native": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
-    "test-native": "node node_modules/jest/bin/jest.js --watch",
-    "test": "yarn run test-web && yarn run test-native"
-  },
-  "jest": {
-    "preset": "jest-expo"
-  },
-  "devDependencies": {
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "name": "react-native-web-starter",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "expo": "^27.0.0",
+        "react": "16.3.1",
+        "react-art": "^16.3.2",
+        "react-dom": "^16.3.1",
+        "react-native": "https://github.com/expo/react-native/archive/sdk-27.0.0.tar.gz",
+        "react-native-web": "^0.6.1",
+        "react-scripts": "1.1.4"
+    },
+    "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+    "scripts": {
+        "web": "react-scripts start",
+        "build-web": "react-scripts build",
+        "test-web": "react-scripts test --env=jsdom",
+        "eject-web": "react-scripts eject",
+        "start-native": "react-native-scripts start",
+        "eject-native": "react-native-scripts eject",
+        "android": "react-native-scripts android",
+        "ios": "react-native-scripts ios",
+        "test-native": "node node_modules/jest/bin/jest.js --watch",
+        "test": "yarn run test-web && yarn run test-native"
+    },
+    "jest": {
+        "preset": "jest-expo"
+    },
+    "devDependencies": {
+        "babel-plugin-react-native-web": "^0.6.1",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "babel-plugin-transform-react-jsx-source": "^6.22.0",
         "babel-preset-expo": "^4.0.0",
-        "flow-bin": "^0.66.0",
-        "jest-expo": "^26.0.0",
-        "react-native-scripts": "^1.13.1",
-        "react-test-renderer": "16.3.1"
-  }
+        "flow-bin": "^0.67.0",
+        "jest-expo": "^27.0.0",
+        "react-native-scripts": "^1.14.0",
+        "react-test-renderer": "16.3.2"
+    }
 }
