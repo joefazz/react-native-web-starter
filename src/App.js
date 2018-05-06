@@ -45,6 +45,7 @@ export default class App extends React.Component {
                 <View style={{ alignItems: "center", flex: 3 }}>
                     <Text style={styles.appIntro}>To get started, edit src/App.js and save to reload.</Text>
                 </View>
+                <Text>Redux edition</Text>
             </View>
         );
     }
