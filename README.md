@@ -17,7 +17,7 @@ It has then been integrated with [Create React Native App](https://github.com/re
 | master                  | The most minimal possible boilerplate, will always be the case                                                                                                           |
 | redux                   | Implements redux reducers, actions, store and connection including example                                                                                               |
 | navigation-react-router | Using react-router-dom, react-router-native and react-router-navigation in order to have a platform agnostic navigation solution including native look at feel on phones |
-| typescript              | Uses the TSC compiler user `yarn watch` to track file changes and compile on the fly                                                                                     |
+| typescript              | Uses the TypeScript compiler with command `yarn watch` to track file changes and compile on the fly for stronger typed RNW code                                          |
 
 ## Get Started
 

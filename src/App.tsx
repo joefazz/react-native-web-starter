@@ -52,7 +52,7 @@ export default class App extends React.Component {
                 </View>
                 <View style={{ alignItems: "center", flex: 3 }}>
                     <Text style={styles.appIntro}>
-                        To get started, run "yarn run watch", then edit src/App.tsx and save to reload.
+                        To get started, run "yarn watch", then edit src/App.tsx and save to reload.
                     </Text>
                 </View>
             </View>
