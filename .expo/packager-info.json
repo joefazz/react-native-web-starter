@@ -1,5 +1,8 @@
 {
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null
+  "expoServerPort": 19003,
+  "packagerPort": 19004,
+  "packagerPid": 15133,
+  "expoServerNgrokUrl": "https://rk-khs.joefazz.react-native-web-starter.exp.direct",
+  "packagerNgrokUrl": "https://packager.rk-khs.joefazz.react-native-web-starter.exp.direct",
+  "ngrokPid": 15144
 }
