@@ -7,7 +7,7 @@
         "react": "16.3.1",
         "react-dom": "^16.3.1",
         "react-native": "https://github.com/expo/react-native/archive/sdk-27.0.0.tar.gz",
-        "react-native-web": "^0.8.2",
+        "react-native-web": "^0.8.9",
         "react-scripts": "1.1.4"
     },
     "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
@@ -45,6 +45,6 @@
         "react-native-scripts": "^1.14.1",
         "react-test-renderer": "16.3.1",
         "tslint": "^5.10.0",
-        "typescript": "^2.9.1"
+        "typescript": "^3.0.3"
     }
 }
