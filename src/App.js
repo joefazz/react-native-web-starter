@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { View, Text, Animated, StyleSheet, StatusBar } from "react-native";
+import { View, Text, TextInput, Animated, StyleSheet, StatusBar } from "react-native";
 import { exampleAction } from "./redux/actions/exampleAction";
 
 export class App extends React.Component {
@@ -45,7 +45,15 @@ export class App extends React.Component {
                     <Text style={styles.appSubtitle}>Redux edition</Text>
                 </View>
                 <View style={{ alignItems: "center", flex: 3 }}>
-                    <Text style={styles.appIntro}>To get started, edit src/App.js and save to reload.</Text>
+                    <View style={styles.appIntro}>
+                        <Text>{this.props.example.text || 'Enter Example Text Below '}</Text>
+                        <TextInput
+                            style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+                            onChangeText={((text) => {
+                                this.props.exampleAction(text)
+                            }).bind(this)}
+                        />
+                    </View>
                 </View>
                 <Text>Redux edition</Text>
             </View>
@@ -58,9 +66,11 @@ const mapStateToProps = state => ({
 });
 
 const bindActions = dispatch => ({
-    exampleAction: () => dispatch(exampleAction())
+    exampleAction: (text) => {
+        dispatch(exampleAction(text))
+    }
 });
-
+  
 export default connect(mapStateToProps, bindActions)(App);
 
 const styles = StyleSheet.create({

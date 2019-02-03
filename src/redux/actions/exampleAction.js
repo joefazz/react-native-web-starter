@@ -6,6 +6,9 @@
      EXAMPLE_ACTION: 'EXAMPLE_ACTION'
  }
 
- export function exampleAction(dispatch) {
-     return dispatch({type: TYPES.EXAMPLE_ACTION, payload: {}});
- }
+export const exampleAction = text => {
+    return {
+      type: TYPES.EXAMPLE_ACTION,
+      payload: text
+    }
+  }

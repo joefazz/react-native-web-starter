@@ -1,6 +1,6 @@
 const initialStore = {
     example: {
-
+        text: ''
     }
 };
 
