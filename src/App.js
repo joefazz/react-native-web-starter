@@ -46,7 +46,10 @@ export class App extends React.Component {
                 </View>
                 <View style={{ alignItems: "center", flex: 3 }}>
                     <View style={styles.appIntro}>
-                        <Text>{this.props.example.text || 'Enter Example Text Below '}</Text>
+                        <Text>To get started, edit src/App.js and save to reload.</Text>
+                    </View>
+                    <View style={styles.appIntro}>
+                        <Text>{this.props.example.text || 'Enter Example Text Below to Modify the Redux Store'}</Text>
                         <TextInput
                             style={{height: 40, borderColor: 'gray', borderWidth: 1}}
                             onChangeText={((text) => {
