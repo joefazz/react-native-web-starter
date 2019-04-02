@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { View, Text, Animated, StyleSheet, StatusBar } from "react-native";
+import { View, Text, TextInput, Animated, StyleSheet, StatusBar, KeyboardAvoidingView } from "react-native";
 import { exampleAction } from "./redux/actions/exampleAction";
 
 export class App extends React.Component {
@@ -34,7 +34,7 @@ export class App extends React.Component {
         };
 
         return (
-            <View style={styles.app}>
+            <KeyboardAvoidingView style={styles.app} behavior="padding" enabled>
                 <View style={styles.appHeader}>
                     <Animated.Image
                         style={[styles.headerImage, rotationStyle]}
@@ -45,10 +45,21 @@ export class App extends React.Component {
                     <Text style={styles.appSubtitle}>Redux edition</Text>
                 </View>
                 <View style={{ alignItems: "center", flex: 3 }}>
-                    <Text style={styles.appIntro}>To get started, edit src/App.js and save to reload.</Text>
+                    <View style={styles.appIntro}>
+                        <Text>To get started, edit src/App.js and save to reload.</Text>
+                    </View>
+                    <View style={styles.appIntro}>
+                        <Text style={styles.appIntroText}>{this.props.example.text || 'Enter Example Text Below to Modify the Redux Store'}</Text>
+                        <TextInput
+                            style={{height: 40, borderColor: 'gray', borderWidth: 1}}
+                            onChangeText={((text) => {
+                                this.props.exampleAction(text)
+                            }).bind(this)}
+                        />
+                    </View>
                 </View>
                 <Text>Redux edition</Text>
-            </View>
+            </KeyboardAvoidingView>
         );
     }
 }
@@ -58,9 +69,11 @@ const mapStateToProps = state => ({
 });
 
 const bindActions = dispatch => ({
-    exampleAction: () => dispatch(exampleAction())
+    exampleAction: (text) => {
+        dispatch(exampleAction(text))
+    }
 });
-
+  
 export default connect(mapStateToProps, bindActions)(App);
 
 const styles = StyleSheet.create({
@@ -89,7 +102,9 @@ const styles = StyleSheet.create({
     },
     appIntro: {
         flex: 3,
-        fontSize: 30,
-        textAlign: "center"
+        alignContent: "center"
+    },
+    appIntroText: {
+        fontSize: 30
     }
 });
