@@ -1,5 +1,7 @@
 # React Native Web Starter
 
+## **Warning!! This branch is no longer going to be maintained because it goes against the whole idea of making a basic starter template by making a decision for you that is not impacted by the tech choice of RNW. I'm not going to delete it because it's fine but just a warning that you'll probably have to update some stuff if you want to use this.**
+
 ## Introduction
 
 This repo is intending to provide an easy starting point for developers looking to make fully cross platform applications across both web with [React Native Web](https://github.com/necolas/react-native-web) and mobile with [Expo](https://github.com/react-community/create-react-native-app).
