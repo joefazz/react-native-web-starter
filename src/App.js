@@ -1,6 +1,8 @@
 import React from "react";
 import { View, Text, Animated, StyleSheet, StatusBar } from "react-native";
 
+const logo = require("./assets/react-logo.png");
+
 export default class App extends React.Component {
     constructor(props) {
         super(props);
@@ -37,7 +39,7 @@ export default class App extends React.Component {
                     <Animated.Image
                         style={[styles.headerImage, rotationStyle]}
                         resizeMode={"contain"}
-                        source={require("./assets/react-logo.png")}
+                        source={logo}
                     />
                     <Text style={styles.appTitle}>Welcome to React Native Web️</Text>
                     <Text style={styles.appSubtitle}>Vanilla Edition</Text>
