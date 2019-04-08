@@ -13,6 +13,7 @@
     "scripts": {
         "web": "react-scripts start",
         "build-web": "react-scripts build",
+        "start-expo": "expo start",
         "start-native": "react-native-scripts start",
         "eject-native": "react-native-scripts eject",
         "android": "react-native-scripts android",
