@@ -10,6 +10,10 @@ It is bootstrapped with [Create React App](https://github.com/facebook/create-re
 
 It has then been integrated with [Create React Native App](https://github.com/react-community/create-react-native-app) and running `yarn ios` or `yarn android` will start the Expo packager. You can also run the project from the Expo XDE program.
 
+Note that it should be possible to eject from Expo to native using `yarn eject-native`, however it is not possible to automatically eject from CRA web build. There are quite a few ways to manually port out of CRA web build as described in the following resources:
+- <https://github.com/facebook/create-react-app#popular-alternatives>
+- <https://reactjs.org/docs/add-react-to-a-website.html>
+
 ## Branches
 
 | Branch                  | Description                                                                                                                                                              |
@@ -29,7 +33,6 @@ A full list of the scripts defined in `package.json` is shown below.
 | ------------------- | ------------------------------------------------------- |
 | `yarn web`          | Start CRA Development Build                             |
 | `yarn build-web`    | Create production build for web                         |
-| `yarn eject-web`    | Eject from CRA                                          |
 | `yarn start-native` | Start the Expo packager                                 |
 | `yarn eject-native` | Eject from Expo                                         |
 | `yarn android`      | Start expo packager and install app to Android Emulator |
