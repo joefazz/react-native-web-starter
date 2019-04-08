@@ -3,10 +3,10 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "expo": "^27.0.0",
+        "expo": "^28.0.0",
         "react": "16.5.1",
         "react-dom": "^16.5.1",
-        "react-native": "https://github.com/expo/react-native/archive/sdk-27.0.0.tar.gz",
+        "react-native": "https://github.com/expo/react-native/archive/sdk-28.0.0.tar.gz",
         "react-native-web": "^0.11.2"
     },
     "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
