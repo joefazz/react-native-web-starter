@@ -13,14 +13,12 @@
     "scripts": {
         "web": "react-scripts start",
         "build-web": "react-scripts build",
-        "test-web": "react-scripts test --env=jsdom",
         "eject-web": "react-scripts eject",
         "start-native": "react-native-scripts start",
         "eject-native": "react-native-scripts eject",
         "android": "react-native-scripts android",
         "ios": "react-native-scripts ios",
-        "test-native": "node node_modules/jest/bin/jest.js --watch",
-        "test": "yarn run test-web && yarn run test-native"
+        "test": "echo 'not supported' && exit 1"
     },
     "jest": {
         "preset": "jest-expo"
@@ -32,7 +30,6 @@
         "babel-preset-expo": "^4.0.0",
         "flow-bin": "^0.66.0",
         "react-art": "16.5.1",
-        "jest-expo": "^27.0.0",
         "react-native-scripts": "^1.13.1",
         "react-scripts": "1.1.4",
         "react-test-renderer": "16.5.1"

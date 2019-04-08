@@ -34,9 +34,7 @@ A full list of the scripts defined in `package.json` is shown below.
 | `yarn eject-native` | Eject from Expo                                         |
 | `yarn android`      | Start expo packager and install app to Android Emulator |
 | `yarn ios`          | Start expo packager and install app to iOS Simulator    |
-| `yarn test-native`  | Run testing script for mobile app                       |
-| `yarn test-web`     | Run testing script for web app                          |
-| `yarn test`         | Run both testing scripts                                |
+| `yarn test`         | not supported                                           |
 
 ### Future Plans for this Library
 
@@ -50,7 +48,6 @@ If you have any ideas for a boilerplate then please create an issue or even bett
 
 #### Tasks
 
-*   Get jest working properly
 *   ReasonML
 
 ### Credit
