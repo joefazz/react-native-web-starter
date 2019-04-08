@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Animated, StyleSheet, StatusBar } from "react-native";
+import { View, Text, Animated, StyleSheet } from "react-native";
 
 const logo = require("./assets/react-logo.png");
 
@@ -17,8 +17,6 @@ export default class App extends React.Component {
                 duration: 1005
             })
         ).start();
-
-        StatusBar.setBarStyle("light-content");
     }
 
     render() {
