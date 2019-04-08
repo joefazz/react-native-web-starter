@@ -51,7 +51,6 @@ If you have any ideas for a boilerplate then please create an issue or even bett
 #### Tasks
 
 *   Get jest working properly
-*   TypeScript
 *   ReasonML
 
 ### Credit
