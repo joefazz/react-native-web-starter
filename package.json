@@ -31,10 +31,10 @@
         "babel-plugin-transform-react-jsx-source": "^6.22.0",
         "babel-preset-expo": "^4.0.0",
         "flow-bin": "^0.66.0",
-        "react-scripts": "1.1.4",
         "react-art": "16.5.1",
         "jest-expo": "^27.0.0",
         "react-native-scripts": "^1.13.1",
+        "react-scripts": "1.1.4",
         "react-test-renderer": "16.5.1"
     }
 }
