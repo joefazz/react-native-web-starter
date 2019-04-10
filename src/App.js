@@ -1,7 +1,7 @@
 /* eslint-env amd */
 
 import React from "react";
-import { View, Text, Animated, StyleSheet } from "react-native";
+import { View, Text, Animated, StyleSheet } from "react-primitives";
 
 const logo = require("./assets/react-logo.png");
 
@@ -41,7 +41,7 @@ export default class App extends React.Component {
                         resizeMode={"contain"}
                         source={logo}
                     />
-                    <Text style={styles.appTitle}>Welcome to React Native Web️</Text>
+                    <Text style={styles.appTitle}>Welcome to react-primitives demo</Text>
                     <Text style={styles.appSubtitle}>Vanilla Edition</Text>
                 </View>
                 <View style={{ alignItems: "center", flex: 3 }}>

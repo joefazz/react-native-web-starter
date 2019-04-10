@@ -1,4 +1,4 @@
-# React Native Web Starter
+# React Native Web Starter with react-primitives
 
 ## Introduction
 
