@@ -7,12 +7,14 @@
         "react": "16.5.1",
         "react-dom": "^16.5.1",
         "react-native": "https://github.com/expo/react-native/archive/sdk-28.0.0.tar.gz",
-        "react-native-web": "^0.11.2"
+        "react-native-web": "^0.11.2",
+        "react-primitives": "^0.8.0"
     },
     "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
     "scripts": {
         "web": "react-scripts start",
         "build-web": "react-scripts build",
+        "lint": "eslint *.js src/**/*.js",
         "start-expo": "expo start",
         "start-native": "react-native-scripts start",
         "eject-native": "react-native-scripts eject",
@@ -28,6 +30,10 @@
         "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "babel-plugin-transform-react-jsx-source": "^6.22.0",
         "babel-preset-expo": "^4.0.0",
+        "eslint": "^5.16.0",
+        "eslint-config-standard-jsx": "^6.0.2",
+        "eslint-plugin-import": "^2.16.0",
+        "eslint-plugin-react": "^7.12.4",
         "flow-bin": "^0.66.0",
         "react-art": "16.5.1",
         "react-native-scripts": "^1.13.1",
