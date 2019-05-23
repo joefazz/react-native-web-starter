@@ -30,8 +30,8 @@ A full list of the scripts defined in `package.json` is shown below.
 | `yarn web`          | Start CRA Development Build                                   |
 | `yarn build-web`    | Create production build for web                               |
 | `yarn eject-web`    | Eject from CRA                                                |
-| `yarn start-native` | Start the Expo packager                                       |
-| `yarn eject-native` | Eject from Expo                                               |
+| `yarn start-expo`   | Start the Expo packager                                       |
+| `yarn eject-expo`   | Eject from Expo                                               |
 | `yarn android`      | Start expo packager and install app to Android Emulator       |
 | `yarn ios`          | Start expo packager and install app to iOS Simulator          |
 | `yarn test-native`  | Run testing script for mobile app                             |
