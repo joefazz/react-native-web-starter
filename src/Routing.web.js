@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-const FixedLink = ({ component, children, ...props }) => <Link {...props}>{children}</Link>;
+const FixedLink = ({ component, children, ...props }) => (
+    <Link {...props}>{children}</Link>
+);
 
 export { FixedLink as Link };
 
