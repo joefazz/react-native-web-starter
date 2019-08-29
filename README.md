@@ -1,5 +1,7 @@
 # React Native Web Starter
 
+> ## Notice: You should probably just use Expo now unless you really want to fork this because it has [built in support for React Native Web](https://docs.expo.io/versions/latest/introduction/running-in-the-browser/) 🙂
+
 ## Introduction
 
 This repo is intending to provide an easy starting point for developers looking to make fully cross platform applications across both web with [React Native Web](https://github.com/necolas/react-native-web) and mobile with [Expo](https://github.com/react-community/create-react-native-app).
