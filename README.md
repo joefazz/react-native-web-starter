@@ -35,6 +35,7 @@ A full list of the scripts defined in `package.json` is shown below.
 | ------------------- | ------------------------------------------------------- |
 | `yarn web`          | Start CRA Development Build                             |
 | `yarn build-web`    | Create production build for web                         |
+| `yarn lint`         | Check results of eslint with very basic rules           |
 | `yarn start-expo`   | Start the Expo packager                                 |
 | `yarn start-native` | Start the native packager (not supported)               |
 | `yarn eject-native` | Eject from Expo                                         |

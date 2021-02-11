@@ -1,3 +1,5 @@
+/* eslint-env amd */
+
 import React from "react";
 import { View, Text, Animated, StyleSheet } from "react-native";
 

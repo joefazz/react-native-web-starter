@@ -1,0 +1,12 @@
+extends:
+- eslint:recommended
+- plugin:react/recommended
+- standard-jsx
+
+rules:
+  react/jsx-indent: off
+  react/jsx-indent-props: off
+
+settings:
+  react:
+    version: detect
